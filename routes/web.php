@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('front-end.index');
 });
 
+Route::get('/about', function () {
+    return view('front-end.about');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
